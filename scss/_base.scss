@@ -1,0 +1,36 @@
+$main-bg: #ff1493;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    min-height: 100vh;
+    background: $main-bg;
+}
+
+%flex {
+    display: flex;
+    align-items: center;
+}
+
+@mixin flexColumn {
+    @extend %flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@mixin flexRow {
+    @extend %flex;
+    justify-content: flex-start;
+}
+
+@mixin mq($size) {
+    @media only screen and (min-width: $size) {
+        @content;
+    }
+}
+
+

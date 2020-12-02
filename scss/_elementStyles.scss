@@ -1,0 +1,71 @@
+main {
+    
+    padding: 20px;
+    @include flexColumn;
+    width: 100%;
+    @include mq(768px) {
+        margin: 50px auto;
+        width: 70%;
+    }
+    
+
+    h1 {
+        color: white;
+        font-family: 'Poppins', sans-serif;
+        padding: inherit;
+        font-size: 2em;
+        @include mq(768px) {
+            font-size: 4em;
+        }
+    }
+
+    section#wordbox {
+        background: #fff;
+        width: inherit;
+        padding: inherit;
+        min-height: 50vh;
+        @include flexColumn;
+        border: 10px dotted purple;
+
+        #word {
+            font-size: 3em;
+            @include mq(768px) {
+                font-size: 5em;
+            }
+        }
+    }
+
+    section#controlbox {
+        width: inherit;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        
+        audio {
+            min-width: 100px;
+            max-width: 200px;
+            flex-grow: 1;
+        }
+    
+        button {
+            min-width: 100px;
+            flex-grow: 1;
+            max-width: 200px;
+            padding: 20px;
+            margin: 50px 10px;
+            background-clip: padding-box;
+            color: white;
+            background: purple;
+    
+            i {
+                font-size: 4em;
+                
+            }
+        }
+    }
+
+    
+    
+}
+
