@@ -68,4 +68,13 @@ export default class CardSet {
         });
     }
 
+    readTheWordAloud() {
+        const btn = document.querySelector('button#play-btn');
+        const audioplayer = document.getElementById('audioplayer');
+
+        btn.addEventListener('click', (event) => {
+            audioplayer.play();
+        });
+    }
+
 }

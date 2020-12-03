@@ -17,6 +17,7 @@ const initApp = () => {
 
     kWords.loadFirstCard();
     kWords.displayNewCard();
+    kWords.readTheWordAloud();
    
 };
 

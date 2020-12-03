@@ -11,15 +11,18 @@
     <script src="./js/main.js" type="module"></script>
 </head>
 <body>
+    <audio id="audioplayer">
+        <source id="audiosource" type="audio/mp4">
+    </audio>
     <main>
         <h1 id="heading">Sight Words!</h1>
         <section id="wordbox">
             <p id="word">sample</p>
         </section>
         <section id="controlbox">
-            <audio controls id="audioplayer">
-                <source id="audiosource" type="audio/mp4">
-            </audio>
+            <button id="play-btn">
+                <i class="fas fa-play"></i>
+            </button>
             <button id="next">
                 <i class="fas fa-arrow-circle-right"></i>
             </button>

@@ -42,10 +42,11 @@ main {
         align-items: center;
         justify-content: space-around;
         
-        audio {
+        audio#audioplayer {
             min-width: 100px;
             max-width: 200px;
             flex-grow: 1;
+            margin: 0;
         }
     
         button {
