@@ -26,6 +26,8 @@ const returnCorrectAudioFile = (cardArrayItem) => {
         case 'the': return 'audio/the.m4a';
         case 'was': return 'audio/was.m4a';
         case 'we': return 'audio/we.m4a';
+        case 'no': return 'audio/no/m4a';
+        case 'yes': return 'audio/yes/m4a';
         default: return;
     }
 };

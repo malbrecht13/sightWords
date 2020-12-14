@@ -3,7 +3,7 @@ import CardSet from "./card.js";
 const kindergartenWords = ['a', 'am', 'and', 'are', 'at', 'be'
 , 'big', 'but', 'can', 'get', 'have', 'he', 'I', 'is'
 , 'like', 'little', 'look', 'my', 'she', 'so', 'that'
-, 'the', 'was', 'we'];
+, 'the', 'was', 'we', 'yes', 'no'];
 
 const kWords = new CardSet(kindergartenWords);
 
@@ -18,7 +18,7 @@ const initApp = () => {
     kWords.loadFirstCard();
     kWords.displayNewCard();
     kWords.readTheWordAloud();
-   
+    
 };
 
 
